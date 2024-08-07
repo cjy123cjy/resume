@@ -32,8 +32,7 @@
 \section{\faUsers\ Experience}
 \datedsubsection{\textbf{Iplusmobot Tech.} Zhejiang, China}{May. 2021 -- Present}
 \role{Software engineer}
-\\AGV(Autonomous Guided Vehicle) Scheduling system development and the related toolchain.
-\\Business management works.
+\\AGV(Autonomous Guided Vehicle) Scheduling system development.
 \begin{itemize}
   \item Remote control the robot. Using MP4f or WebRTC protocol to transfer the video stream, and Sending input signal with Logitech Steering Wheel under Linux.
   \item Using Golang \& shell-script to build the benchmark tool for testing robot scheduling algorithms.
@@ -44,6 +43,48 @@
 \datedsubsection{\textbf{China Academy of Machinery Science \& Technology}, Zhejiang, China}{Apr. 2020 -- Apr. 2021}
 \role{Software engineer}
 \\ Machine tool cloud serve software development with springboot.
+
+\section{\faFile\ Projects}
+\cvsection{Multi-Robot Scheduling Algorithm Testing Tool}
+\cvitem{}{
+  \begin{itemize}
+    \item Developed an automated testing framework based on business scenarios to quickly build and verify the feasibility of algorithms in batches.
+    \item Set up a virtual machine cluster with Proxmox, using one as a server, and developed a toolchain based on Golang and Shell to test algorithms and collect data on other virtual machines.
+    \item Managed project and development; long-term validation solved most common algorithm problems before deployment, greatly shortening the algorithm problem cycle and facilitating rapid on-site algorithm deployment.
+    \item Challenges: Synchronizing test states, transitioning from manual to automated testing, and dealing with software layers, versions, configurations, and black-box algorithm processes.
+  \end{itemize}
+}
+
+\cvsection{Remote Driving Project}
+\cvitem{}{
+  \begin{itemize}
+    \item Remotely controlled AGV using video and steering wheel kit for manual driving.
+    \item The project involved cockpit, vehicle, and server communication using HTTP and WebSocket, with the ability to communicate over the public network via intranet penetration.
+    \item The cockpit used a Logitech steering wheel to simulate real car control and directly send control signals to AGV, while the server handled video frontend and backend.
+    \item Challenges: High video stream latency and instability; initially used MP4F protocol for video transmission, later switched to WebRTC to reduce latency and improve stability.
+    \item Video functionality reused in all company video projects.
+  \end{itemize}
+}
+
+\cvsection{Project Management System Development}
+\cvitem{}{
+  \begin{itemize}
+    \item Developed an internal system to manage project cycles, weekly reports, and meeting minutes to quantify cost accounting and department management.
+    \item Responsibilities: Project management and backend development.
+    \item Solved issues: Visualized cost input, standardized project documentation, and streamlined meeting content.
+    \item Challenges: Semantic and terminology boundaries, complex database table structures due to model definitions and business complexities.
+  \end{itemize}
+}
+
+\cvsection{Unmanned Road Roller Tunnel Positioning Project}
+\cvitem{}{
+  \begin{itemize}
+    \item High-difficulty project requiring strong adaptability under extreme conditions; world's first at the time.
+    \item Utilized UWB sensors for high-definition mapping in tunnels with uncertain curvature and few feature points.
+    \item Currently applied to the automation of construction machinery in road and bridge construction, such as unmanned new energy rollers, enabling automated material laying over distances of more than two kilometers, significantly reducing labor costs and increasing work efficiency per unit time.
+    \item Participated in on-site implementation and debugging of tunnel positioning project; responsible for software data interfacing with partners and navigation module software and hardware development.
+  \end{itemize}
+}
 
 \section{\faHeartO\ Honors and Awards}
 \datedline{BUCT People Scholaship * 3}{2014 -- 2016}
