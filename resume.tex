@@ -12,7 +12,7 @@
 \basicInfo{
   \email{bitterblossom5486@gmail.com} \textperiodcentered\
   \phone{(+86) 137-5481-6839} \textperiodcentered\ }
-%   \linkedin[billryan8]{https://www.linkedin.com/in/billryan8}}
+  \linkedin[JiayuCao]{https://www.linkedin.com/in/jiayu-cao-014543186/}
 
 \section{\faGraduationCap\ Education}
 \datedsubsection{\textbf{University of Detroit Mercy(UDM)}, Michigan, US}{2018 -- 2020}
@@ -22,11 +22,11 @@
 
 \section{\faCogs\ Skills}
 \begin{itemize}[parsep=0.5ex]
-  \item Programming Languages: Golang > Shell > Node.js
-  \item Frameworks: React
-  \item Database Management: Mysql, Redis, ETCD
-  \item Platform: Linux
-  \item Other Tools: Docker
+  \item Rearend: Golang > Shell > Node.js
+  \item Frontend: React
+  \item Database Management: Mysql, Redis
+  \item OS system: Linux
+  \item Env Deploy: Docker
 \end{itemize}
 
 \section{\faUsers\ Experience}
@@ -37,7 +37,7 @@
   \item Remote control the robot. Using MP4f or WebRTC protocol to transfer the video stream, and Sending input signal with Logitech Steering Wheel under Linux.
   \item Using Golang \& shell-script to build the benchmark tool for testing robot scheduling algorithms.
   \item Building Project Management System with Golang to standardize the project cycle controlling, weekly reports, and meetings. The system quantified the cost accounting and the departmental administration.
-  \item Developing robot scheduling code for BYD, involving more than 800 robots spread across four battery manufacturing factories.
+  \item Developing robot scheduling code for BYD Auto, involving more than 800 robots spread across four battery manufacturing factories.
 \end{itemize}
 
 \datedsubsection{\textbf{China Academy of Machinery Science \& Technology}, Zhejiang, China}{Apr. 2020 -- Apr. 2021}
@@ -47,32 +47,33 @@
 \section{\faFile\ Projects}
 \datedsubsection{\textbf{Multi-Robot Scheduling Algorithm Testing Tool}}{}
 \begin{itemize}[parsep=0.5ex]
-  \item Developed an automated testing framework based on business scenarios to quickly build and verify the feasibility of algorithms in batches.
-  \item Set up a virtual machine cluster with Proxmox, using one as a server, and developed a toolchain based on Golang and Shell to test algorithms and collect data on other virtual machines.
-  \item Managed project and development; long-term validation solved most common algorithm problems before deployment, greatly shortening the algorithm problem cycle and facilitating rapid on-site algorithm deployment.
-  \item Challenges: Synchronizing states between manage-program and executor, transitioning from manual to automated testing, and dealing with software layers, versions, configurations, and black-box algorithm processes.
+  \item Developed an automated testing tool to quickly deploy the environment and verify the feasibility of algorithms in batches based on the on-site scenario.
+  \item Set up a virtual machine cluster with Proxmox. Using one as the server and the rest as the test executors.
+  \item Developed a toolchain based on Golang and Shell. Testing the robot schedule algorithm and collect data.
+  \item Responsibilities: Project management and rear-end development; Most algorithm problems was solved before the on-site deployment via the repeated testing. Significantly reducing the algorithm problem feedback cycle.
+  \item Challenges: Synchronizing states between the test-manager program at the server and the programs at the executor. Transitioning from manual to automated testing without greatly modifying the algorithm programs. Coordinating the software layers, versions, configurations, and black-box algorithm processes.
 \end{itemize}
 
 \datedsubsection{\textbf{Remote Driving Project}}{}
 \begin{itemize}[parsep=0.5ex]
-  \item Remotely controlled AGV with video-stream and steering wheel kit.
-  \item The project involved cockpit, AGV, and server communication using HTTP and WebSocket, with the ability to communicate over the internet via intranet penetration.
-  \item The cockpit used a Logitech steering wheel to simulate real AGV control and directly send control signals to AGV, while the server handled video frontend and backend.
+  \item Remotely controlling AGV with video-stream and steering wheel kit.
+  \item The project involves cockpit, AGV, and server communication using HTTP and WebSocket, with the ability to communicate over the internet via intranet penetration.
+  \item The cockpit uses the Logitech steering wheel to simulate the real AGV control and directly send control messages to AGV.
   \item Challenges: High video stream latency and instability; initially used MP4F protocol for video transmission, later switched to WebRTC to reduce latency and improve stability.
-  \item Video functionality reused in all video related projects of Iplusmobot.
+  \item The video-stream part is reused in all video related projects.
 \end{itemize}
 
 \datedsubsection{\textbf{Project Management System Development}}{}
 \begin{itemize}[parsep=0.5ex]
   \item Developed an internal system to manage project cycles, weekly reports, and meeting minutes to quantify cost accounting and department management.
   \item Responsibilities: Project management and backend development.
-  \item Solved issues: Visualized cost input, standardized project documentation, and streamlined meeting content.
-  \item Challenges: Semantic and terminology boundaries; complex DB tables due to model definitions and business complexities.
+  \item Solved issues: Visualizing the workload of employees, standardizing the project documentations, and streamlining the meeting.
+  \item Challenges: Semantic and terminology boundaries. Complex DB tables due to model definitions and business complexities.
 \end{itemize}
 
 \datedsubsection{\textbf{Autonomous Road Roller Project}}{}
 \begin{itemize}[parsep=0.5ex]
-  \item High-difficulty project requiring strong adaptability under extreme conditions; world's first at the time.
+  \item Coorperate with SANY Group. Deploying the navigation IPC for the electrical road roller. project requires high-robust for the extremely high temperature in the tunnel.
   \item Utilized UWB sensors for high-definition mapping in tunnels with uncertain curvature and few feature points.
   \item Currently applied to the automation of construction machinery in road construction, such as the autonomous road rollers, enabling automated material laying over distances of more than two kilometers, significantly reducing labor costs and increasing work efficiency in unit of time.
   \item Participated in on-site implementation and debugging of tunnel positioning project; responsible for software data interfacing with partners and navigation module software and hardware development.
