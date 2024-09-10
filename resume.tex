@@ -31,11 +31,12 @@
 
 \section{\faCogs\ Skills}
 \begin{itemize}[parsep=0.5ex]
-  \item Rearend: Golang, Shell, Node.js
+  \item Rearend: Golang, SpringBoot, Shell, Node.js
   \item Frontend: React
   \item Database Management: Mysql, Redis
   \item OS system: Linux
   \item Env Deploy: Docker
+  \item Languages: English - Fluent, Mandarin - Native speaker
 \end{itemize}
 
 \section{\faUsers\ Experience}
@@ -54,6 +55,33 @@
 \\ Machine tool cloud serve software development with springboot.
 
 \section{\faFile\ Projects}
+\datedsubsection{\textbf{BYD battery factory project}}{}
+\begin{itemize}[parsep=0.5ex]
+  \item The large-scale AGV scheduling project(100+ robots) for the battery manufacturing scenario.
+  \item Responsibilities: DevOps, on-site support, database optimization.
+  \item The production line is for the battery pack assembly, and this scenario was sophisticated due to the following reasons:
+  \item Variety types of machines and products caused the complex scheduling logics.
+  \item 10000+ tasks per production line every day, the database experienced significant pressure.
+  \item To release the database's pressure, I optimized the database with creating reasonable Index, and constructed the Redis cache layer.
+\end{itemize}
+
+% todo tomorrow night fix it!
+%Warehouse Management System (WMS)
+%Responsibilities: Backend development and operations.
+%This project aimed to expand the company’s existing multi-robot scheduling and AGV systems to the upper layers, achieving full factory production automation and intelligence.
+%Developed using the Go-Kratos microservice framework, the system was divided into multiple independent services to facilitate deployment and improve fault tolerance. The system was structured into general functions and customized business logic, simplifying maintenance and future feature expansions. CI and deployment were managed via Docker Compose.
+%The project primarily involved the management of upstream system orders, automation tasks, and SKU concepts.
+\datedsubsection{\textbf{Warehouse Management System (WMS)}}{}
+\begin{itemize}[parsep=0.5ex]
+  \item DevOps
+  \item This project aimed to expand the dimension of the scheduling system, achieving the full intelligence for the factory scenario.
+  \item The system implement the entire SKU(Stock Keeping Unit) flow that includes receiving, inbound, outbound, stock-moving, mission generate, etc.
+  \item This system fills the blank field between the MES(Munufacturing Execution System) & Our AGV Scheduling system.
+  \item Developed with the Go-Kratos microservice framework, the system was divided into multiple microservices to improve the fault tolerance performance. Import Redis cahce for release the possible DB pressure.
+  \item Deployment with Docker Compose.
+\end{itemize}
+
+
 \datedsubsection{\textbf{Multi-Robot Scheduling Algorithm Testing Tool}}{}
 \begin{itemize}[parsep=0.5ex]
   \item Developed an automated testing tool to quickly deploy the environment and verify the feasibility of algorithms in batches based on the on-site scenario.
@@ -72,22 +100,6 @@
   \item The video-stream part is reused in all video related projects.
 \end{itemize}
 
-\datedsubsection{\textbf{Project Management System Development}}{}
-\begin{itemize}[parsep=0.5ex]
-  \item Developed an internal system to manage project cycles, weekly reports, and meeting minutes to quantify cost accounting and department management.
-  \item Responsibilities: Project management and backend development.
-  \item Solved issues: Visualizing the workload of employees, standardizing the project documentation, and streamlining the meeting.
-  \item Challenges: Semantic and terminology boundaries. Complex DB tables due to model definitions and business complexities.
-\end{itemize}
-
-\datedsubsection{\textbf{Autonomous Road Roller Project}}{}
-\begin{itemize}[parsep=0.5ex]
-  \item Coorperate with SANY Group. Deploying the navigation IPC for the electrical road roller. project requires high-robust for the extremely high temperature in the tunnel.
-  \item Utilized UWB sensors for high-definition mapping in tunnels with uncertain curvature and few feature points.
-  \item Currently applied to the automation of construction machinery in road construction, such as the autonomous road rollers, enabling automated material laying over distances of more than two kilometers, significantly reducing labor costs and increasing work efficiency in unit of time.
-  \item Participated in on-site implementation and debugging of tunnel positioning project; responsible for software data interfacing with partners and navigation module software and hardware development.
-\end{itemize}
-
 \section{\faHeartO\ Honors and Awards}
 \datedline{BUCT People Scholaship * 3}{2014 -- 2016}
 \datedline{UDM Academic excellent award}{2018}
@@ -95,7 +107,6 @@
 \section{\faInfo\ Miscellaneous}
 \begin{itemize}[parsep=0.5ex]
   \item Blog: https://blog.csdn.net/weixin\_44445507
-  \item Languages: English - Fluent, Mandarin - Native speaker
 \end{itemize}
 
 %% Reference
